@@ -1,0 +1,1 @@
+"""Prompt router application package."""
