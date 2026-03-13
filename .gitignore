@@ -1,6 +1,6 @@
 .env
 __pycache__/
 *.pyc
-logs/route_log.jsonl
+logs/*.jsonl
 .pytest_cache/
 .venv/
