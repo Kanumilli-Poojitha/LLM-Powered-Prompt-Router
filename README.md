@@ -21,6 +21,41 @@ If the classifier output is malformed or confidence is too low, the service safe
 
 ## Architecture
 
+prompt-router
+│
+├── app
+│   ├── main.py
+│   ├── router.py
+│   ├── classifier.py
+│   ├── llm_client.py
+│   ├── logger.py
+│   └── prompts.py
+│
+├── tests
+│   └── test_messages.py
+│
+├── logs
+│   └── route_log.jsonl
+│
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── README.md
+└── .env.example
+
+docker compose up --build
+
+http://localhost:8000/docs
+
+how do i sort a list in python
+
+Get-Content logs/route_log.jsonl
+
+hey
+
+.venv\Scripts\Activate.ps1
+pytest -q
+
 - `app/main.py`: FastAPI app and `/chat` endpoint orchestration.
 - `app/classifier.py`: Classifier logic, JSON extraction, and safe fallback behavior.
 - `app/router.py`: Persona lookup, confidence-threshold handling, and second LLM call.
@@ -201,3 +236,12 @@ The test module includes at least 15 sample messages covering clear, ambiguous, 
 
 - Never commit real keys.
 - Keep only `.env.example` in version control.
+
+Demo video:
+https://drive.google.com/file/d/1DdfU8VLgeBDeLSjceIrJ0Dwimwncn1Vl/view?usp=sharing
+
+Live video:
+https://drive.google.com/file/d/1gz_fKwt6ztKt_FXb9Y-jnJVjzDnFF_9x/view?usp=sharing
+
+Author
+Kanumilli Poojitha
